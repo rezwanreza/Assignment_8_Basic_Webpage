@@ -20,13 +20,14 @@
       </li>
       <li>Browser
         <ul class="submenu" id="browser-info">
-          <!-- JS will populate this -->
+          <!-- Populated by JS -->
         </ul>
       </li>
       <li>Configuration
         <ul class="submenu">
           <li>
-            Password: <input type="password" id="pwd" onkeyup="validatePassword()" placeholder="Enter password">
+            Password:
+            <input type="password" id="pwd" placeholder="Enter password">
           </li>
         </ul>
       </li>
@@ -35,10 +36,9 @@
           <li>Developer: Rezwan Reza</li>
           <li>
             <form action="mailto:rezwan.reza12@gmail.com" method="post" enctype="text/plain">
-              Name: <input type="text" name="name"><br>
-              Email: <input type="email" name="email"><br>
-              Message: <br>
-              <textarea name="message" rows="4" cols="30"></textarea><br>
+              <label>Name: <input type="text" name="name"></label><br>
+              <label>Email: <input type="email" name="email"></label><br>
+              <label>Message:<br><textarea name="message" rows="4" cols="30"></textarea></label><br>
               <input type="submit" value="Send">
             </form>
           </li>
