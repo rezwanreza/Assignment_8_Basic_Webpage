@@ -1,4 +1,3 @@
-// Check if DOM is fully loaded
 window.addEventListener("DOMContentLoaded", () => {
   // Populate browser info
   const browserInfo = document.getElementById("browser-info");
@@ -29,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Password validator
+  // Password validation
   const pwdInput = document.getElementById("pwd");
   if (pwdInput) {
     pwdInput.addEventListener("keyup", () => {
