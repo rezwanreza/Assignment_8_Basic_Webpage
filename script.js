@@ -1,16 +1,24 @@
-// Display browser info
-const infoList = document.getElementById("browser-info");
-const infoItems = [
-  `Navigator: ${navigator.appName}, ${navigator.product}, ${navigator.appVersion}, ${navigator.userAgent}, ${navigator.platform}, ${navigator.language}`,
-  `Window: ${window.innerHeight}x${window.innerWidth}`,
-  `Screen: ${screen.width}x${screen.height}, Avail: ${screen.availWidth}x${screen.availHeight}, ColorDepth: ${screen.colorDepth}, PixelDepth: ${screen.pixelDepth}`,
-  `Location: ${location.href}, ${location.hostname}, ${location.pathname}, ${location.protocol}`
-];
-infoItems.forEach(item => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  infoList.appendChild(li);
-});
+// Show browser info in submenu
+const browserList = document.getElementById("browser-info");
+if (browserList) {
+  const info = [
+    `Navigator: ${navigator.appName}`,
+    `Product: ${navigator.product}`,
+    `Version: ${navigator.appVersion}`,
+    `User Agent: ${navigator.userAgent}`,
+    `Platform: ${navigator.platform}`,
+    `Language: ${navigator.language}`,
+    `Window: ${window.innerWidth} x ${window.innerHeight}`,
+    `Screen: ${screen.width} x ${screen.height}`,
+    `Location: ${location.href}`
+  ];
+
+  info.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    browserList.appendChild(li);
+  });
+}
 
 // Password validation
 function validatePassword() {
