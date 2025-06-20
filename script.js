@@ -19,11 +19,13 @@ const items = [
   `Protocol: ${location.protocol}`
 ];
 
-items.forEach(info => {
-  const li = document.createElement("li");
-  li.textContent = info;
-  browserInfo.appendChild(li);
-});
+if (browserInfo) {
+  items.forEach(info => {
+    const li = document.createElement("li");
+    li.textContent = info;
+    browserInfo.appendChild(li);
+  });
+}
 
 // Password validator
 function validatePassword() {
