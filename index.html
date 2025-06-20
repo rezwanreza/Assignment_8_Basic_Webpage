@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rezwan's Assignment 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
+  <h1>Assignment 8: Basic Webpage</h1>
+
   <nav class="navbar">
     <ul>
       <li>Course
@@ -9,7 +19,9 @@
         </ul>
       </li>
       <li>Browser
-        <ul class="submenu" id="browser-info"></ul>
+        <ul class="submenu" id="browser-info">
+          <!-- JS will populate this -->
+        </ul>
       </li>
       <li>Configuration
         <ul class="submenu">
@@ -21,7 +33,15 @@
       <li>About
         <ul class="submenu">
           <li>Developer: Rezwan Reza</li>
-          <li><a href="mailto:rezwan.reza12@gmail.com">Contact Me</a></li>
+          <li>
+            <form action="mailto:rezwan.reza12@gmail.com" method="post" enctype="text/plain">
+              Name: <input type="text" name="name"><br>
+              Email: <input type="email" name="email"><br>
+              Message: <br>
+              <textarea name="message" rows="4" cols="30"></textarea><br>
+              <input type="submit" value="Send">
+            </form>
+          </li>
         </ul>
       </li>
     </ul>
@@ -29,3 +49,4 @@
 
   <script src="script.js"></script>
 </body>
+</html>
